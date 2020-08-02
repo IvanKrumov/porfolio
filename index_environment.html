@@ -37,9 +37,14 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
+  border: 1px solid black;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
 </style>
 </head>
 <body>
@@ -50,6 +55,16 @@ body {
   <a href="index_cert.html">Certificates</a>
   <a href="index_environment.html">My environment</a>
   <a href="index_hobies.html">Hobies</a>
+</div>
+
+<div style="padding-left:16px">
+  <p>This is my pipeline and works the as it follows:
+    <p>- Once the code is teste localy on my laptop(1) I push it in the GihHub repo(3).</p>
+    <p>- In the repo there is webhook set that notifies the Jenkins which is installedd</p>
+    <p>on the Raspbery Pi(2) and Jenkins job deploys the site in the Virtual server(Apache2)</p>
+    <p>- If I am happy with the result I start bash script on the production server(4) and</p> 
+    <p>code is finally pulled there.</p>
+  </p>
 </div>
 
 <div> 
