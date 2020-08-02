@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(129, 143, 202);
 }
 
 .topnav {
@@ -31,12 +32,19 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
 </head>
 <body>
 
 <div class="topnav">
-  <a class="active" href="index.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="index_cv.html">CV</a>
   <a href="index_cert.html">Certificates</a>
   <a href="index_environment.html">My environment</a>
@@ -46,10 +54,9 @@ body {
 <div style="padding-left:16px">
   <h1>My CV page</h1>
   
-  <object data="cv.pdf" type="application/pdf" width="1150" height="1000">
-  <p>Your web browser doesn't have a PDF plugin.
-  Instead you can <a href="cv.pdf">click here to
-  download the PDF file.</a></p>
+  <object data="cv.pdf" type="application/pdf" width="1150" height="1000" class="center">
+  <p>Your web browser doesn't have a PDF plugin.</p>
+  <a href="cv.pdf">Click here to download the PDF file.</a>
 </object>
 </div>
 
