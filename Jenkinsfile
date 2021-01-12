@@ -12,18 +12,16 @@ pipeline {
             }
         }
 
-        stage("test") {
+        stage("cd dir") {
 
             steps {
-                echo 'testing the application...'
+                cd /home/ivan/site/porfolio
             }
         }
 
-        stage("deploy") {
+        stage("pwd") {
 
             steps {
-                echo 'deploying the application...'
-                cd /home/ivan/site/porfolio
                 pwd
             }
         }
