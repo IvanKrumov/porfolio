@@ -2,28 +2,14 @@ pipeline {
     
     agent any
 
-    stages {
-
-        stage("build") {
-
-            steps {
-                echo 'building the application...'
-
-            }
-        }
-
-        stage("test") {
-
-            steps {
-                echo 'testing the application...'
-            }
-        }
-
         stage("deploy") {
 
             steps {
                 echo 'deploying the application...'
+                cd /home/ivan/site/porfolio
+                git pull https://github.com/IvanKrumov/porfolio.git
             }
         }
     }
 }
+
