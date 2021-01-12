@@ -15,7 +15,8 @@ pipeline {
         stage("cd dir") {
 
             steps {
-                sh 'cd /home/ivan/site/porfolio'
+                sh 'cd /'
+                sh 'ls'
             }
         }
 
