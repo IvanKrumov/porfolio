@@ -15,14 +15,14 @@ pipeline {
         stage("cd dir") {
 
             steps {
-                cd /home/ivan/site/porfolio
+                sh 'cd /home/ivan/site/porfolio'
             }
         }
 
         stage("pwd") {
 
             steps {
-                pwd
+                sh 'pwd'
             }
         }
     }
